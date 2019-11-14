@@ -4,7 +4,7 @@
   "description": "Teamwork is an internal social network for employees of an organization",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha backend/test/**/*.js --require @babel/register --reporter spec --timeout 25000",
     "start": "node --exec babel-node backend/server.js",
     "start:dev": "nodemon --exec babel-node backend/server.js"
   },
@@ -33,7 +33,13 @@
     "eslint-plugin-react": "^7.16.0"
   },
   "dependencies": {
+<<<<<<< HEAD
     "express": "^4.17.1",
     "pg": "^7.12.1"
+=======
+    "chai": "^4.2.0",
+    "express": "^4.17.1",
+    "mocha": "^6.2.2"
+>>>>>>> aa6214ad228ba0cf82d79a06237735b9dcc96344
   }
 }
